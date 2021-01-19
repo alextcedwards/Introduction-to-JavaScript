@@ -17,9 +17,9 @@ Do the following:
 
    HINT: no function required
 */
-  const votingAge = 18;
-  console.log(votingAge >= 18);
-  
+const votingAge = 18;
+console.log(votingAge >= 18);
+
 /*
 Task 1b - Values
 
@@ -32,9 +32,9 @@ Do the following:
 */
 let varOne = 10;
 let varTwo = 12;
-if (varTwo > varOne){
+if (varTwo > varOne) {
   console.log(varOne + varTwo);
-};
+}
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -46,7 +46,7 @@ Do the following:
 
    HINT: look up the Number method
 */
-let string = '1999';
+let string = "1999";
 console.log(Number(string));
 
 /*
@@ -145,18 +145,16 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-const computerChoice = function(){
+const computerChoice = function () {
   let randomNumber = Math.floor(Math.random() * 3);
-  if(randomNumber === 0){
-    return 'rock';
-  } else if (randomNumber === 1){
-    return 'paper';
+  if (randomNumber === 0) {
+    return "rock";
+  } else if (randomNumber === 1) {
+    return "paper";
   } else {
-    return 'scissors';
+    return "scissors";
   }
-}
-
-
+};
 
 function game(user, computerChoice) {
   if (user === computerChoice) {
@@ -192,7 +190,7 @@ function game(user, computerChoice) {
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kiolmeters received to miles
+  2. Convert the number of kilometers received to miles
   3. Return the number of miles
 */
 
@@ -223,14 +221,17 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number) {
-  return `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${
-    number - 1
+  for(let i = number; i > 0; i-- ){
+  return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${
+    i - 1
   } bottles of soda on the wall`;
 }
+}
+console.log(annoyingSong(15))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
-//Grade Calculator
+//Grade Calculato\
 /*
 Using the grade function below do the following: 
   1. Receive a score out of 100 
