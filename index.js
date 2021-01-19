@@ -30,6 +30,11 @@ Do the following:
 
    HINT: no function required
 */
+let varOne = 10;
+let varTwo = 12;
+if (varTwo > varOne){
+  console.log(varOne + varTwo);
+};
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -140,28 +145,39 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+const computerChoice = function(){
+  let randomNumber = Math.floor(Math.random() * 3);
+  if(randomNumber === 0){
+    return 'rock';
+  } else if (randomNumber === 1){
+    return 'paper';
+  } else {
+    return 'scissors';
+  }
+}
 
 
-function game(user, computer) {
-  if (user === computer) {
+
+function game(user, computerChoice) {
+  if (user === computerChoice) {
     return "it's a tie";
   }
   if (user === "rock") {
-    if (computer === "paper") {
+    if (computerChoice === "paper") {
       return "you lose!";
     } else {
       return "you win!";
     }
   }
   if (user === "paper") {
-    if (computer === "scissors") {
+    if (computerChoice === "scissors") {
       return "you lose!";
     } else {
       return "you win!";
     }
   }
   if (user === "scissors") {
-    if (computer === "rock") {
+    if (computerChoice === "rock") {
       return "you lose!";
     } else {
       return "you win!";
