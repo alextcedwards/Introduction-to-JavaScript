@@ -17,7 +17,9 @@ Do the following:
 
    HINT: no function required
 */
-
+  const votingAge = 18;
+  console.log(votingAge >= 18);
+  
 /*
 Task 1b - Values
 
@@ -39,6 +41,8 @@ Do the following:
 
    HINT: look up the Number method
 */
+let string = '1999';
+console.log(Number(string));
 
 /*
 Task 1d - Multiply
@@ -136,6 +140,7 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+
 
 function game(user, computer) {
   if (user === computer) {
